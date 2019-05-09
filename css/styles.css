@@ -3,14 +3,50 @@ body {
 /** background-color: green; */
 }
 
+a {
+  text-decoration: none;
+}
+
 /**
-* Home Page
+* CSS Grid Layout
 */
 .container-home {
    display: grid;
    grid-template-columns: 20% 60% 20%;
    grid-template-rows: auto auto auto auto auto auto;
  }
+
+ .nav {
+    grid-row: 1 / 2;
+    grid-column: 2 /4;
+}
+
+.profile-pic {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+
+  .reach-out {
+   grid-row: 2 / 3;
+  grid-column: 3 /4;
+}
+
+  .content {
+    grid-row: 3 / 4;
+    grid-column: 2 /3;
+}
+
+.social-links-container {
+  display: grid;
+   grid-template-columns: 1fr 1fr 1fr; 
+   grid-template-rows: auto;
+   align-self: center;
+}
+
+.social-links {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+}
 
  .footer {
   grid-row: 5 / 6;
@@ -19,23 +55,18 @@ body {
 
  }
 
-  .intro-message {
-    grid-row: 3 / 4;
-    grid-column: 2 /3;
-}
+/**
+* End of CSS Grid Layout
+*/
 
-.reach-out {
-   grid-row: 2 / 3;
-  grid-column: 3 /4;
-}
+
 
 .margin-bottom {
   margin-bottom: 1.5rem;
 }
 
-.nav {
-    grid-row: 1 / 2;
-    grid-column: 2 /4;
+.nav-active {
+  text-shadow: 1px 1px grey;
 }
 
 .nav-container {
@@ -66,12 +97,7 @@ order: 4;
 }
 .nav-item-five {
 order: 5;  
-}
-
- .profile-pic {
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
-  }
+} 
 
 .size-profile-pic {
     height: 150px;
@@ -80,19 +106,6 @@ order: 5;
 
 .size-social-links {
     height: 50px;
-}
-
-
-.social-links {
-    grid-row: 4 / 5;
-    grid-column: 2 / 3;
-}
-
-.social-links-container {
-  display: grid;
-   grid-template-columns: 1fr 1fr 1fr; 
-   grid-template-rows: auto;
-   align-self: center;
 }
 
 .social-item {
