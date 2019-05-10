@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 
 body {
-/** background-color: green; */
+font-family: Roboto;
+line-height: 1.5rem;
 }
 
 a {
@@ -8,7 +11,7 @@ a {
 }
 
 /**
-* CSS Grid Layout
+* CSS Grid Layout Home
 */
 .container-home {
    display: grid;
@@ -36,6 +39,97 @@ a {
     grid-column: 2 /3;
 }
 
+.pm-profile {
+    grid-row: 4 / 5;
+    grid-column: 2 /3;
+}
+
+.pm-profile-diagram {
+  height: 350px;
+  width: 350px;
+}
+
+/**
+* End of CSS Grid Layout
+*/
+
+/**
+* CSS Grid Layout Internal Pages
+*/
+.container-internal-page {
+   display: grid;
+   grid-template-columns: 20% 20% 20% 20% 20%;
+   grid-template-rows: auto auto auto auto auto auto;
+   grid-column-gap: 10px;
+ }
+
+ .intro-paragraph {
+    grid-row: 2 / 3;
+    grid-column: 2 / 5;
+ }
+
+.section-user-need-heading {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+}
+
+.section-user-need {
+    grid-row: 3 / 4;
+    grid-column: 3 / 5;
+ }
+
+.section-prototype-heading {
+  grid-row: 4 / 5;
+  grid-column: 2 / 3;
+}
+
+.section-prototype {
+    grid-row: 4 / 5;
+    grid-column: 3 / 5;
+ }
+
+
+.section-use-case-heading {
+  grid-row: 5 / 6;
+  grid-column: 2 / 3;
+}
+
+.section-use-case {
+    grid-row: 5 / 6;
+    grid-column: 3 / 5;
+ }
+
+ .social-links {
+    grid-row: 6 / 7;
+    grid-column: 2 / 3;
+}
+
+ .footer {
+  grid-row: 6 / 7;
+  grid-column: 2 / 5;
+  align-content: center;
+
+ }
+
+/**
+* End of CSS Grid Layout Approac
+*/
+
+/**
+* Footer
+**/
+
+.container-footer {
+   display: grid;
+   grid-template-columns: 20% 60% 20%;
+   grid-template-rows: auto auto auto auto auto auto;
+   background-color: #dfdfe1;
+ }
+
+.social-links {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
 .social-links-container {
   display: grid;
    grid-template-columns: 1fr 1fr 1fr; 
@@ -43,22 +137,26 @@ a {
    align-self: center;
 }
 
-.social-links {
-    grid-row: 4 / 5;
-    grid-column: 2 / 3;
-}
+
 
  .footer {
-  grid-row: 5 / 6;
-  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  grid-column: 2 / 5;
   align-content: center;
 
  }
+ .size-social-links {
+    height: 50px;
+}
+
+.social-item {
+  grid-row: 3 / 4;
+  align-self: center;
+}
 
 /**
-* End of CSS Grid Layout
-*/
-
+* End of Footer
+**/
 
 
 .margin-bottom {
@@ -103,17 +201,6 @@ order: 5;
     height: 150px;
     width: 150px;
   }
-
-.size-social-links {
-    height: 50px;
-}
-
-.social-item {
-  height: 2rem;
-  width: 2rem;
-  grid-row: 3 / 4;
-  align-self: center;
-}
 
 
 

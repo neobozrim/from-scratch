@@ -7,8 +7,9 @@
 	<link rel="stylesheet" href="./css/styles.css">
 	</head>
 	<body>
+		<!-- Nav -->
+
 		<div class="container-home">
-	<!-- Nav -->
 			<nav class="nav margin-bottom">
 				<ul class="nav-container">
 					<li class="nav-item-one"><a href="./index.html">Welcome</a></li>
@@ -18,25 +19,43 @@
 					<li class="nav-item-five"><a href="./resources.html">Resources</a></li>
 				</ul>
 			</nav>
+		</div>
 	<!-- End of Nav -->
 
+		<div class="container-internal-page">
+	
+
 			
-		<div class="content">	
+		<div class="intro-paragraph">	
 			<h1>Approach</h1>
+			<p class="margin-bottom"><i>We all agree that a successful product person needs to understand the business domain and the market, be able to coin the product strategy, motivate people, manage priorities and make tough decisions when needed.<b> In addition, a product person should ALSO BE ABLE TO...</b></i></p>
+		</div>
 
-			<p><b>We all agree</b> that a successful product person needs to understand the target market, be able to coin a strategy about how to attack it, motivate people, manage priorities and make tough decisions when needed.<br><br><b><i> However, any product person should ALSO BE ABLE TO...</i></b> </p>
-
-			<h2>... uncover a core user need</h2>
+		<div class="section-user-need-heading">
+			<h2>UNCOVER CORE USER NEEDS</h2>
+		</div>
+		
+		<div class="section-user-need">
 			<p>Before you start "attacking" that market, make sure to first speak to the people who'll be buying and using your product. Look for what you haven't already thought of. <b>Don't bias respondents to what you want to hear - hear what they have to say.</b></p>
 			<p>You can read about some of my early user interview experiences on my blog: <a href="https://medium.com/yavor-popov">The Prototype and the Human</a>.</p>
+		</div>
 
-			<h2>... piece together a prototype</h2>
+		<div class="section-prototype">
 			<p>Especially when you wake up with yet another genius idea, prototype it real quick. Just put it together in any form. This will help you uncover its not-so-genius aspects that you haven't thought of. Then show it to UX, dev and some stakeholders. Get their first thoughts. Sometimes a quick prototype can save you and your team weeks of back and forth and wasteful work. Besides, <b>you might find out that your ideas are not always that genius after all.</b></p>
 			<p>Here's one of my recent game prototypes - in gif format:</p>
 			<img src="https://media.giphy.com/media/QMHLZJNpbN3TCyKBHC/giphy.gif" alt="GIF IMAGE" width="100%">
+		</div>
 
-			<h2>... define the use cases before the user stories</h2>
-			<p>A user story is about a little peace of customer value, while a use case is about the context in which that value exists. <b>Map the context first. Draw the details later.</b></p>
+		<div class="section-prototype-heading">
+			<h2>PIECE TOGETHER A PROTOTYPE</h2>
+		</div>
+			
+			<div class="section-use-case-heading">
+				<h2>DEFINE THE USE CASES BEFORE THE USER STORIES</h2>
+			</div>
+
+			<div class="section-use-case">
+					<p>A user story is about a little peace of customer value, while a use case is about the context in which that value exists. <b>Map the context first. Draw the details later.</b></p>
 			<p>Let's look at an example of a simply structured use case for the now popular game of Hearthstone.</p>
 			<!--First, here's a sample player turn in the game.
 			<video width="400" controls muted style="padding: 5%">
@@ -47,7 +66,9 @@
 
 			<div style="background-color: #c9d1db; padding: 10px;">
 				<p><b>USE CASE NAME:</b> Player's available actions on turn.</p>
+
 				<p><b>ACTORS:</b> Player A, Player B</p>
+
 				<p><b>PRE-CONDITIONS:</b> 
 					<ul>
 						<li>Player A and Player B participate in a game against each other;</li>
@@ -55,6 +76,7 @@
 					    <li>Player A is on turn;</li>
 					</ul> 
 				</p>
+
 				<p><b>BASE FLOW:</b>
 					<ul>
 						<li>System draws a card from Player A's deck and includes it in the player's hand</li>
@@ -64,6 +86,7 @@
 						<li>System checks if there are card or action effects that <u>amend</u> the played card or action</li>
 					</ul>
 				</p>
+
 				<p><b>POST-CONDITIONS:</b>
 					<ul>
 						<li>If there are triggered card or action effects, the System applies their effects to the playing board, all applicable characters in the game and both players' decks</li>
@@ -74,47 +97,60 @@
 						<li>If a Player hero's life is equal to or less than zero, game ends and the corresponding player loses the game</li>
 					</ul>
 				</p>
+
 				<p><b>ALTERNATE FLOWS:</b>
 					<ul>
 						<li>- Player A ends their turn <br>
 						<i>POST-CONDITION:</i> Player B is on turn</li>
 						<br>
-						<li>- Time to act has expired <br>
-							- System automatically ends Player A's turn <br>
+
+						<li>- Time to act has expired 
+						<br>
+							- System automatically ends Player A's turn
+						<br>
 						<i>POST-CONDITION:</i> Player B is on turn</li>
 					</ul>
 				</p>
-				<p><b>EXCEPTION FLOWS:</b></p>
-				<ul>
-					<li>- Player A attempts to play a card or action that costs more than the player's free mana <br>
-						<i>POST-CONDITION:</i> System informs player that they don't have enough mana to play this
-					</li>
-					<br>
-					<li>- Either Player A or Player B leaves the game during the turn<br>
-						<i>POST-CONDITION:</i> That player loses the game, while the other one wins it</li>
-					<br>
-					<li>- Either Player A or Player B is disconnected<br>
-						- System announces that to both players<br>
-						- System attempts to re-establish connection<br>
-						- System fails to re-establish connection for X number of seconds<br>
-						<i>POST-CONDITION:</i> System ends the game, disconnected player loses, remaining player wins</li>
-				</ul>
+
+				<p><b>EXCEPTION FLOWS:</b>
+					<ul>
+						<li>- Player A attempts to play a card or action that costs more than the player's free mana <br>
+							<i>POST-CONDITION:</i> System informs player that they don't have enough mana to play this
+						</li>
+						<br>
+						<li>- Either Player A or Player B leaves the game during the turn<br>
+							<i>POST-CONDITION:</i> That player loses the game, while the other one wins it</li>
+						<br>
+						<li>- Either Player A or Player B is disconnected<br>
+							- System announces that to both players<br>
+							- System attempts to re-establish connection<br>
+							- System fails to re-establish connection for X number of seconds<br>
+							<i>POST-CONDITION:</i> System ends the game, disconnected player loses, remaining player wins</li>
+					</ul>
+				</p>
 			</div>
-			<div>
-				<br>
-				<p><b>Mind you, though, that some people are more visual and get lost reading use cases.</b> So in order to make sure that everybody on your team better comprehends the use case, you could supply a flow chart to it. Here's the flow chart depicting our Base Flow. As soon as you have your first draft, go and show it to a dev and a UX person. Involving them early in the creation of your use cases and flow charts is key for the success of your product.</p>
-				<img src="{{site.baseurl}}/assets/use-case-flow.png" style="width: 100%">
-				<br>
-			    <br>
-				<p><b>Finally, just imagine if the product person had only</b> created a single story about "...play a card or action in order to weaken my opponents's characters...". You'd be missing so many alternative and exception flows. Usually those will keep emerging during the development of the feature, creating tension and pushing your promised completion date farther... in turn, creating even more tention. <br>To avoid that, before you write a single user story, create your use cases. Treat a use case as a map of the user stories you need. And is there a product person who cannot benefit from such a map?</p>
+
+				<div>
+					<br>
+					<p><b>Mind you, though, that some people are more visual and get lost reading use cases.</b> So in order to make sure that everybody on your team better comprehends the use case, you could supply a flow chart to it. Here's the flow chart depicting our Base Flow. As soon as you have your first draft, go and show it to a dev and a UX person. Involving them early in the creation of your use cases and flow charts is key for the success of your product.</p>
+					<img src="./img/use-case-flow.png" style="width: 100%">
+					<br>
+				    <br>
+					<p><b>Finally, just imagine if the product person had only</b> created a single story about "...play a card or action in order to weaken my opponents's characters...". You'd be missing so many alternative and exception flows. Usually those will keep emerging during the development of the feature, creating tension and pushing your promised completion date farther... in turn, creating even more tention. <br>To avoid that, before you write a single user story, create your use cases. Treat a use case as a map of the user stories you need. And is there a product person who cannot benefit from such a map?</p>
+				</div>
+					
+					<p><b>Let's continue the conversation with analytics. </b><a href="{{site.baseurl}}/understand.html">NEXT PAGE: Understand</a></p>
+
 			</div>
-				
-			<p><b>Let's continue the conversation with analytics. </b><a href="{{site.baseurl}}/understand.html">NEXT PAGE: Understand</a></p>
+			
+		
+	<!-- End of Content -->
+		</div> 
 
+	<!-- Footer -->
+		<div class="container-footer">
 
-		</div>
-
-	<!-- Social Links -->
+			<!-- Social Links -->
 			<div class="social-links">
 				 <div class="social-links-container">
 				       <figure class="social-item">
@@ -130,14 +166,13 @@
 				       </figure>
 				 </div>
 			</div>
-	<!-- End of Social Links -->	
+			<!-- End of Social Links -->
 
-	<!-- Footer -->
 			<div class="footer">
 					<p>This website has been proudly built by myself.</p>
 			</div>
-	<!-- End of Footer -->
 		</div> 
+	<!-- End of Footer -->
 
 	</body>
 </html>
