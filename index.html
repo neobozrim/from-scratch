@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
+			<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139970795-1"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
@@ -27,74 +27,83 @@
 		<meta name="viewport" content="width=device-width">
 	<title>Yavor Popov | Portfolio</title>
 	<link rel="stylesheet" href="./css/styles.css">
+
+	
 	</head>
 	<body>
-		<div class="container-home">
-	<!-- Nav -->
-			<nav class="nav margin-bottom">
-				<ul class="nav-container">
-					<li class="nav-item-one nav-active"><a href="./index.html" style="background-color: #000000; color: white;">|  Welcome  |</a></li>
-					<li class="nav-item-two"><a href="./approach.html">Approach</a></li>
-					<li class="nav-item-three"><a href="./understand.html">Understand</a></li>
-					<li class="nav-item-four"><a href="./edd.html">EDD Trap</a></li>
-					<li class="nav-item-five"><a href="./resources.html">Resources</a></li>
-				</ul>
-			</nav>
-	<!-- End of Nav -->
+			<script>
+					function myFunction() { 
+						var x = document.getElementById("main-nav"); 
+						if (x.style.display === "grid") {
+						 x.style.display = "none"; 
+						 } 
+						 else 
+						 { x.style.display = "grid"; 
+						}
+					}
+			</script>
+			<div class="header">
+                <div class="logo">
+                    <img src="./img/logo.png/" alt="Logo" class="logo-size">
+                </div>
+                <div id="main-nav" class="main-nav">
+                    <ul>
+                        <li class="nav-list"><a href="./index.html" style="background-color: #000000; color: white;">| Welcome |</a></li>
+                        <li class="nav-list"><a href="./approach.html">Approach</a></li>
+                        <li class="nav-list"><a href="./understand.html">Understand</a></li>
+                        <li class="nav-list"><a href="./edd.html">Edd Trap</a></li>
+                        <li class="nav-list"><a href="./resources.html">Resources</a></li>
+                    </ul><!-- .main-menu -->
+                </div>
+                <div class="hamburger">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <img src="./img/threelines.png/" alt="Logo" class="hamburger-size">
+                    </a>
+                </div>
+				
 
-		<div class="reach-out">
-			<a href="mailto:yavor.b.popov@gmail.com" style="reach-out-style"><button class="reach-out-style">Reach out</button></a>
-		</div>	
-
-	<!-- Content -->
-		  <div class="profile-pic margin-bottom">
-		    <img src="./img/yavor-profile-pic-may-2019.png" alt="Yavor Popov Profile Pic" class="size-profile-pic">
-		  </div>
-
-		<div class="content">
-		  <h1>Welcome!</h1>
-		<p>My name is Yavor Popov. I've spent the last 5 years doing digital product development accross multiple business domains for a range of organizations. Along the way I've worked closely with developers, UX designers, growth hackers and business development people.</p> 
-		<p>Here follows an overview of the types of work I've done at the last three organizations I worked at.</p> 
-		<p class="margin-bottom">I hope this helps you get a better idea of my profile. If you want to continue the conversation, reach out. I’d be happy to talk.</p>
-		</div>
-
-		<div class="pm-profile">
-			<img src="./img/pm-profile-07.png" alt="Yavor's role at IGSoft" class="pm-profile-diagram">	
-			<img src="./img/pm-profile-08.png" alt="Yavor's role at hacker.works" class="pm-profile-diagram">	
-			<img src="./img/pm-profile-09.png" alt="Yavor's role at Squirrel Attack!" class="pm-profile-diagram">
-			<img src="./img/pm-profile-10.png" alt="Yavor's role at Squirrel Attack!" class="pm-profile-diagram">
-		</div>
-
-	<!-- End of Content -->
-		</div> 
-
-	<!-- Footer -->
-		<div class="container-footer">
-
-			<!-- Social Links -->
-			<div class="social-links">
-				 <div class="social-links-container">
-				       <figure class="social-item">
-				         <a href="https://www.linkedin.com/in/yavorpopov/"><img src="./img/icon-in.png" class="size-social-links"></a>
-				       </figure>
-
-				       <figure class="social-item">
-				         <a href="https://medium.com/yavor-popov"><img src="./img/icon-medium.png" class="size-social-links"></a>
-				       </figure>
-				 
-				       <figure class="social-item">
-				         <a href="mailto:yavor.b.popov@gmail.com"><img src="./img/icon-mail.png" class="size-social-links"></a>
-				       </figure>
-				 </div>
+            </div><!-- .header -->
+            <div class="container-home">
+				<div class="reach-out">
+				<a href="mailto:yavor.b.popov@gmail.com" style="reach-out-style"><button class="reach-out-style">Reach out</button></a>
+				</div>
 			</div>
+		<div class="wrapper2">
+			
+			
+			<div class="picture">
+		    		<img src="./img/yavor-profile-pic-may-2019.png" alt="Yavor Popov Profile Pic" class="size-profile-pic">
+			</div>
+			<div class="page-copy">
+				<h1>Welcome!</h1>
+				<p>My name is Yavor Popov. I've spent the last 5 years doing digital product development accross multiple business domains for a range of organizations. Along the way I've worked closely with developers, UX designers, growth hackers and business development people.</p> 
+				<p>Here follows an overview of the types of work I've done at the last three organizations I worked at.</p> 
+				<p class="margin-bottom">I hope this helps you get a better idea of my profile. If you want to continue the conversation, reach out. I’d be happy to talk.</p>
+			</div>
+			<div class="pm-graphs">
+				<img src="./img/pm-profile-10.png" alt="Yavor's role at Squirrel Attack!" class="pm-profile-diagram">
+				<img src="./img/pm-profile-07.png" alt="Yavor's role at IGSoft" class="pm-profile-diagram">
+				<img src="./img/pm-profile-08.png" alt="Yavor's role at hacker.works" class="pm-profile-diagram">	
+				<img src="./img/pm-profile-09.png" alt="Yavor's role at Squirrel Attack!" class="pm-profile-diagram">
+			</div>
+			
+		</div>
+
+		<!-- Footer -->
+		<div class="footer2">
+				<!-- Social Links -->    
+	        <a href="https://www.linkedin.com/in/yavorpopov/"><img src="./img/icon-in.png" class="social-link"></a>
+	        <a href="https://medium.com/yavor-popov"><img src="./img/icon-medium.png" class="social-link"></a>
+			<a href="mailto:yavor.b.popov@gmail.com"><img src="./img/icon-mail.png" class="social-link"></a>    
 			<!-- End of Social Links -->
 
-			<div class="footer">
-					<p>This website has been proudly built by myself.</p>
+			<div class="footer-note">
+					<p><i>This website has been proudly built by myself.</i></p>
 			</div>
-		</div> 
-	<!-- End of Footer -->
+		</div>
+		<!-- End of Footer -->
+
+
 
 	</body>
 </html>
-

@@ -29,63 +29,71 @@
 	<link rel="stylesheet" href="./css/styles.css">
 	</head>
 	<body>
-		<!-- Nav -->
+			<script>
+					function myFunction() { 
+						var x = document.getElementById("main-nav"); 
+						if (x.style.display === "grid") {
+						 x.style.display = "none"; 
+						 } 
+						 else 
+						 { x.style.display = "grid"; 
+						}
+					}
+			</script>
+			<div class="header">
+                <div class="logo">
+                    <img src="./img/logo.png/" alt="Logo" class="logo-size">
+                </div>
+                <div id="main-nav" class="main-nav">
+                    <ul>
+                        <li class="nav-list"><a href="./index.html">Welcome</a></li>
+                        <li class="nav-list"><a href="./approach.html" style="background-color: #000000; color: white;">| Approach |</a></li>
+                        <li class="nav-list"><a href="./understand.html">Understand</a></li>
+                        <li class="nav-list"><a href="./edd.html">Edd Trap</a></li>
+                        <li class="nav-list"><a href="./resources.html">Resources</a></li>
+                    </ul><!-- .main-menu -->
+                </div>
+                <div class="hamburger">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <img src="./img/threelines.png/" alt="Logo" class="hamburger-size">
+                    </a>
+                </div>
+				
 
-		<div class="container-home">
-			<nav class="nav margin-bottom">
-				<ul class="nav-container">
-					<li class="nav-item-one"><a href="./index.html">Welcome</a></li>
-					<li class="nav-item-two nav-active"><a href="./approach.html" style="background-color: #000000; color: white;">| Approach |</a></li>
-					<li class="nav-item-three"><a href="./understand.html">Understand</a></li>
-					<li class="nav-item-four"><a href="./edd.html">EDD Trap</a></li>
-					<li class="nav-item-five"><a href="./resources.html">Resources</a></li>
-				</ul>
-			</nav>
+            </div><!-- .header -->
 
-			<div class="reach-out">
+
+
+			<div class="container-home">
+				<div class="reach-out">
 				<a href="mailto:yavor.b.popov@gmail.com" style="reach-out-style"><button class="reach-out-style">Reach out</button></a>
+				</div>
 			</div>
-		</div>
-	<!-- End of Nav -->
-
-
-
-		<div class="container-internal-page">
+		<div class="wrapper2">
 	
-
+			<div class="picture">
+		    <img src="./img/approach.png" alt="Drawing of reaching hand" class="internal-pages-pic">
+		  </div>
 			
-		<div class="intro-paragraph">	
+		<div class="page-copy">	
 			<h1>Approach</h1>
-			<p class="margin-bottom"><i>A successful product person needs to understand the business domain and the market, be able to coin the product strategy, motivate people, manage priorities and make tough decisions when needed.<b> In addition, a product person should ALSO BE ABLE TO...</b></i></p>
-		</div>
+			<p><i>A successful product person needs to understand the business domain and the market, be able to coin the product strategy, motivate people, manage priorities and make tough decisions when needed.<b> In addition, a product person should ALSO BE ABLE TO...</b></i></p>
 
-		<div class="section-user-need-heading">
 			<h2>Uncover core user needs</h2>
-		</div>
-		
-		<div class="section-user-need">
+			
 			<p>Before you start "attacking" that market, make sure to first speak to the people who'll be buying and using your product. Look for what you haven't already thought of. <b>Don't bias respondents to what you want to hear - hear what they have to say.</b></p>
 			<p>You can read about some of my early user interview experiences on my blog: <a href="https://medium.com/yavor-popov">The Prototype and the Human</a>.</p>
-		</div>
 
-		<div class="section-prototype-heading">
-			<h2>Piece together a prototype</h2>
-		</div>
 
-		<div class="section-prototype">
+		<h2>Piece together a prototype</h2>
+
 			<p>Especially when you wake up with yet another genius idea, prototype it real quick. Just put it together in any form. This will help you uncover its not-so-genius aspects that you haven't thought of. Then show it to UX, dev and some stakeholders. Get their first thoughts. Sometimes a quick prototype can save you and your team weeks of back and forth and wasteful work. Besides, <b>you might find out that your ideas are not always that genius after all.</b></p>
 			<p>Here's a game prototype (in gif format) that helped me invalidate a direction we could have taken a product.</p>
 			<img src="https://media.giphy.com/media/QMHLZJNpbN3TCyKBHC/giphy.gif" alt="GIF IMAGE" width="100%">
-		</div>
-
-
-			
-			<div class="section-use-case-heading">
-				<h2>Define the use cases before the user stories</h2>
-			</div>
-
-			<div class="section-use-case">
-					<p>A user story is about a little peace of customer value, while a use case is about the context in which that value exists. <b>Map the context first. Draw the details later.</b> You'll find that a single use case often times not only gives birth to multiple user stories, but a few epics as well.</p>
+	
+			<h2>Define the use cases before the user stories</h2>
+	
+			<p>A user story is about a little peace of customer value, while a use case is about the context in which that value exists. <b>Map the context first. Draw the details later.</b> You'll find that a single use case often times not only gives birth to multiple user stories, but a few epics as well.</p>
 			<p>Here's a simply structured use case template that I've found useful for introducing use cases to a wider audience. Of course you can go much deeper and utilize a more sophisticated format, but this one should be a good starting point.</p>
 			<!--<p>Let's look at an example of a simply structured use case for the now popular game of Hearthstone.</p> -->
 			<!--First, here's a sample player turn in the game.
@@ -94,51 +102,52 @@
 			  Your browser does not support HTML5 video.
 			</video>
 			<p>Now let's jump to our use case.</p>-->
-	<div style="background-color: ; padding: 10px; border: 1px solid black;">
-				<p><b>USE CASE NAME:</b> Put a descriptive name that properly summarizes your use case.</p>
+				<div class="use-case-box">	
+					<div class="use-case" style="padding: 10px; border: 1px solid black;">
+						<p><b>USE CASE NAME:</b> Put a descriptive name that properly summarizes your use case.</p>
 
-				<p><b>ACTORS:</b> List the users who are going to be affected by the different flows. For example Player A, Player B.</p>
+						<p><b>ACTORS:</b> List the users who are going to be affected by the different flows. For example Player A, Player B.</p>
 
-				<p><b>PRE-CONDITIONS:</b> 
-					<ul>
-						<li>Make sure your pre-conditions are specific to the use case.</li>
-						<li>What needs to be present to enable the use case?</li>
-					    <li>What should have been performed by whom prior to the use case?</li>
-					</ul> 
-				</p>
+						<p><b>PRE-CONDITIONS:</b> 
+							<ul>
+								<li>Make sure your pre-conditions are specific to the use case.</li>
+								<li>What needs to be present to enable the use case?</li>
+							    <li>What should have been performed by whom prior to the use case?</li>
+							</ul> 
+						</p>
 
-				<p><b>BASE FLOW:</b>
-					<ul>
-						<li>Describe the happy path - the sequence of steps and corresponding system's responses that are going to satisfy most of the actors' needs most of the time.</li>
-						<li>Player A initiates action D</li>
-						<li>System does X</li>
-						<li>Player A performs action E</li>
-						<li>System performs process Z</li>
-						<li>Player B then performs action D</li>
-					</ul>
-				</p>
+						<p><b>BASE FLOW:</b>
+							<ul>
+								<li>Describe the happy path - the sequence of steps and corresponding system's responses that are going to satisfy most of the actors' needs most of the time.</li>
+								<li>Player A initiates action D</li>
+								<li>System does X</li>
+								<li>Player A performs action E</li>
+								<li>System performs process Z</li>
+								<li>Player B then performs action D</li>
+							</ul>
+						</p>
 
-				<p><b>POST-CONDITIONS:</b>
-					<ul>
-						<li>List what has happened as a result of the Base Flow.</li>
-					</ul>
-				</p>
+						<p><b>POST-CONDITIONS:</b>
+							<ul>
+								<li>List what has happened as a result of the Base Flow.</li>
+							</ul>
+						</p>
 
-				<p><b>ALTERNATE FLOWS:</b>
-					<ul>
-						<li>List the steps of the flows that are going to happen with lower frequency but are still important to be covered. Say, if you are creating a use case related to accepting credit card payments - maybe there's also going to be an option to pay with PayPal or BitCoin.<br>
-						<i>POST-CONDITION:</i> Describe what happens as a result of that alternate flow.</li>
-					</ul>
-				</p>
+						<p><b>ALTERNATE FLOWS:</b>
+							<ul>
+								<li>List the steps of the flows that are going to happen with lower frequency but are still important to be covered. Say, if you are creating a use case related to accepting credit card payments - maybe there's also going to be an option to pay with PayPal or BitCoin.<br>
+								<i>POST-CONDITION:</i> Describe what happens as a result of that alternate flow.</li>
+							</ul>
+						</p>
 
-				<p><b>EXCEPTION FLOWS:</b>
-					<ul>
-						<li>In the case related to credit card payments an exception flow would be a card that doesn't have enough balance, or the card number is incorrect or it's a Visa Electron but you don't accept those. Or maybe internet dropped half way through the checkout process. You get the point.<br>
-							<i>POST-CONDITION:</i> So what happens in those cases then?</li>
-					</ul>
-				</p>
-			</div>
-
+						<p><b>EXCEPTION FLOWS:</b>
+							<ul>
+								<li>In the case related to credit card payments an exception flow would be a card that doesn't have enough balance, or the card number is incorrect or it's a Visa Electron but you don't accept those. Or maybe internet dropped half way through the checkout process. You get the point.<br>
+									<i>POST-CONDITION:</i> So what happens in those cases then?</li>
+							</ul>
+						</p>
+					</div>
+				</div>
 			<!-- <div style="background-color: #c9d1db; padding: 10px;">
 				<p><b>USE CASE NAME:</b> Player's available actions on turn.</p>
 
@@ -205,7 +214,7 @@
 				</p>
 			</div> -->
 
-				<div>
+				<div class="last-paragraph">
 					<br>
 					<p><b>Mind you, though, that some people are more visual and get lost reading use cases.</b> So in order to make sure that everybody on your team better comprehends the use case, you could supply a flow chart to it. As soon as you have the first draft of your flow chart, go and show it to a Dev and a UX person. Involving your team early in the creation of your use cases and flow charts is key for the success of your product.</p>
 					<!--<img src="./img/use-case-flow.png" style="width: 100%">-->
@@ -224,33 +233,19 @@
 	<!-- End of Content -->
 		</div> 
 
-	<!-- Footer -->
-		<div class="container-footer">
-
-			<!-- Social Links -->
-			<div class="social-links">
-				 <div class="social-links-container">
-				       <figure class="social-item">
-				         <a href="https://www.linkedin.com/in/yavorpopov/"><img src="./img/icon-in.png" class="size-social-links"></a>
-				       </figure>
-
-				       <figure class="social-item">
-				         <a href="https://medium.com/yavor-popov"><img src="./img/icon-medium.png" class="size-social-links"></a>
-				       </figure>
-				 
-				       <figure class="social-item">
-				         <a href="mailto:yavor.b.popov@gmail.com"><img src="./img/icon-mail.png" class="size-social-links"></a>
-				       </figure>
-				 </div>
-			</div>
+				<!-- Footer -->
+		<div class="footer2">
+				<!-- Social Links -->    
+	        <a href="https://www.linkedin.com/in/yavorpopov/"><img src="./img/icon-in.png" class="social-link"></a>
+	        <a href="https://medium.com/yavor-popov"><img src="./img/icon-medium.png" class="social-link"></a>
+			<a href="mailto:yavor.b.popov@gmail.com"><img src="./img/icon-mail.png" class="social-link"></a>    
 			<!-- End of Social Links -->
 
-			<div class="footer">
-					<p>This website has been proudly built by myself.</p>
+			<div class="footer-note">
+					<p><i>This website has been proudly built by myself.</i></p>
 			</div>
-		</div> 
-	<!-- End of Footer -->
-
+		</div>
+		<!-- End of Footer -->
 	</body>
 </html>
 

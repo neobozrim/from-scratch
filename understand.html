@@ -30,90 +30,84 @@
 	<link rel="stylesheet" href="./css/styles.css">
 	</head>
 	<body>
-		<!-- Nav -->
+			<script>
+					function myFunction() { 
+						var x = document.getElementById("main-nav"); 
+						if (x.style.display === "grid") {
+						 x.style.display = "none"; 
+						 } 
+						 else 
+						 { x.style.display = "grid"; 
+						}
+					}
+			</script>
+			<div class="header">
+                <div class="logo">
+                    <img src="./img/logo.png/" alt="Logo" class="logo-size">
+                </div>
+                <div id="main-nav" class="main-nav">
+                    <ul>
+                        <li class="nav-list"><a href="./index.html">Welcome</a></li>
+                        <li class="nav-list"><a href="./approach.html">Approach</a></li>
+                        <li class="nav-list"><a href="./understand.html" style="background-color: #000000; color: white;">| Understand |</a></li>
+                        <li class="nav-list"><a href="./edd.html">Edd Trap</a></li>
+                        <li class="nav-list"><a href="./resources.html">Resources</a></li>
+                    </ul><!-- .main-menu -->
+                </div>
+                <div class="hamburger">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <img src="./img/threelines.png/" alt="Logo" class="hamburger-size">
+                    </a>
+                </div>
+				
+
+            </div><!-- .header -->
 		<div class="container-home">
-			<nav class="nav margin-bottom">
-				<ul class="nav-container">
-					<li class="nav-item-one"><a href="./index.html">Welcome</a></li>
-					<li class="nav-item-two"><a href="./approach.html">Approach</a></li>
-					<li class="nav-item-three nav-active"><a href="./understand.html" style="background-color: #000000; color: white;">| Understand |</a></li>
-					<li class="nav-item-four"><a href="./edd.html">EDD Trap</a></li>
-					<li class="nav-item-five"><a href="./resources.html">Resources</a></li>
-				</ul>
-			</nav>
-			<div class="reach-out">
+				<div class="reach-out">
 				<a href="mailto:yavor.b.popov@gmail.com" style="reach-out-style"><button class="reach-out-style">Reach out</button></a>
+				</div>
 			</div>
-		</div>
-	<!-- End of Nav -->
+		<div class="wrapper2">
 
-		<div class="container-home">
-
+			<div class="picture">
+		    <img src="./img/understand.png" alt="Drawing of a chart" class="internal-pages-pic">
+		  </div>
 
 	<!-- Content -->
-		<div class="content">	
+		<div class="page-copy">	
 			<h1>Understand</h1>
+			<p><i>A product person needs to know how their product is being used. For this website I use a combination of Google Analytics, Tag Manager and Hotjar.</i></p>
 
-			<p><i>A product person needs to know how their product is being used.</i></p>
+			<h2>Google Analytics</h2>
+			<p>It was end time I dedicated the time to take the Google Analytics Individual Qualification Exam. The Google Academy courses helped put a fresh perspective on the depth and breadth of analysis you could do with Analytics. My future plans are to test the Google Analytics A/B testing feature with my side project.</p>
+			<img src="./img/Individual-qualification-exam-Google.PNG" alt="Analytics Individual Qualification Exam Certificate" style="width: 300px; border: 1px solid black;">
 
-			<p>While you're using this website there's a few tools working behind the scenes. Here's a brief overview.</p>
+			<h2>Google Tag Manager</h2>
+			<p>Setting up goals that show on your Analytics Dashboard is much much easier with Tag manager. Later today (13th May 2019) I'm gonna add a few tags in Tag Manager that are going to fire in Analytics. For example I'll be tracking CV downloads from the resources page, clicks on the links to my blog, as well as there'll be a few goals related to how people nagivate through the website. If you're interested, check out this page again around midnight today for it's updated version. You know, there's only as many hours in the day one can work on their portfolio :)</p>
+			<img src="./img/wip.jpg" alt="Hot spots example" style="width: 300px">
 
-			<h2>Event monitoring - Reach out button clicks</h2>
-			<p>There's a Tag manager tag that reports to me every time you hit "Reach out!" in the header. Since the purpose of this website is to have people reach out to me, I thought it makes sense to (at least) know how many times someone attempted to do so.</p>
-			<img src="./img/mailto-event-analytics.png" alt="Reach out Google Analytics event tracking">
+			<h2>Hotjar</h2>
+			<p>I use Hotjar for their scrollmaps and heatmaps. Scroll maps are my favourite. It's very useful to know on which pages people just don't bother scrolling to the bottom. That might be a signal to change or reduce some of the content. Btw the feedback tag you see on the right of your screen also comes with Hotjar. You can give it a try!</p>
+			<img src="./img/hotjar-scroll-maps.png" alt="Scroll map example" style="width: 300px">
 
-			<h2>Hotspots</h2>
-			<p>Hotjar's hotspots help me get an idea about where most people go (or try to go) from a given page. Hotspots are highlights of areas where people click:</p>
-			<img src="./img/hotspots-hotjar.png" alt="Hot spots example" style="width: 600px">
+			<p class="last-paragraph"><b>By now I should have grabbed <span style="text-decoration: line-through">your attention</span> some of your data.</b> Now go ahead and find out what EDD means!</p>
 
-			<h2>User Flows</h2>
-			<p>While hotspots are useful for optimizing the "micro" experience on a specific page of interest, Google Analytics User Flows tell the bigger picture about how people "flow" through the site and where they lose interest and... just leave you... Mind you that the screenshot is from the early days of this site.</p>
-			<img src="./img/behaviour-flow.png" alt="User flows example" style="width: 300px">
-
-			<h2>Scroll maps</h2>
-			<p>I rely on HotJar to tell me that, for example, only 25% of people scrolled down to the bottom of a given page. This helps me optimize content, so things that I find important are not being missed by the people who read a given page.</p>
-			<img src="./img/scroll-map.png" alt="Scroll map example">
-
-			<h2>Feedback</h2>
-			<p>Don't be shy and click on that Feedback button on the right. Pick an emoji and (only if you want) send me a line. Here's how I see those:</p>
-			<img src="./img/feedback-hotjar.png" alt="Horjar feedback pic" style="width: 300px">
-
-
-			<p>By now I should have grabbed your attention... and some of your data. Now go ahead and find out what EDD means!</p>
-
-			<!-- <a href="{{site.baseurl}}/edd-trap.html">NEXT PAGE: The EDD Trap</a>-->
-	</div>
-
-		</div> 
-			<!-- End of Content -->
-
-	<!-- Footer -->
-		<div class="container-footer">
-
-			<!-- Social Links -->
-			<div class="social-links">
-				 <div class="social-links-container">
-				       <figure class="social-item">
-				         <a href="https://www.linkedin.com/in/yavorpopov/"><img src="./img/icon-in.png" class="size-social-links"></a>
-				       </figure>
-
-				       <figure class="social-item">
-				         <a href="https://medium.com/yavor-popov"><img src="./img/icon-medium.png" class="size-social-links"></a>
-				       </figure>
-				 
-				       <figure class="social-item">
-				         <a href="mailto:yavor.b.popov@gmail.com"><img src="./img/icon-mail.png" class="size-social-links"></a>
-				       </figure>
-				 </div>
 			</div>
+			<!-- End of Content -->
+		</div>
+				<!-- Footer -->
+		<div class="footer2">
+				<!-- Social Links -->    
+	        <a href="https://www.linkedin.com/in/yavorpopov/"><img src="./img/icon-in.png" class="social-link"></a>
+	        <a href="https://medium.com/yavor-popov"><img src="./img/icon-medium.png" class="social-link"></a>
+			<a href="mailto:yavor.b.popov@gmail.com"><img src="./img/icon-mail.png" class="social-link"></a>    
 			<!-- End of Social Links -->
 
-			<div class="footer">
-					<p>This website has been proudly built by myself.</p>
+			<div class="footer-note">
+					<p><i>This website has been proudly built by myself.</i></p>
 			</div>
-		</div> 
-	<!-- End of Footer -->
-
+		</div>
+		<!-- End of Footer -->
 	</body>
 </html>
 

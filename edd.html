@@ -29,28 +29,53 @@
 	<link rel="stylesheet" href="./css/styles.css">
 	</head>
 	<body>
-		<!-- Nav -->
+			<script>
+					function myFunction() { 
+						var x = document.getElementById("main-nav"); 
+						if (x.style.display === "grid") {
+						 x.style.display = "none"; 
+						 } 
+						 else 
+						 { x.style.display = "grid"; 
+						}
+					}
+			</script>
+			<div class="header">
+                <div class="logo">
+                    <img src="./img/logo.png/" alt="Logo" class="logo-size">
+                </div>
+                <div id="main-nav" class="main-nav">
+                    <ul>
+                        <li class="nav-list"><a href="./index.html">Welcome</a></li>
+                        <li class="nav-list"><a href="./approach.html">Approach</a></li>
+                        <li class="nav-list"><a href="./understand.html">Understand</a></li>
+                        <li class="nav-list"><a href="./edd.html" style="background-color: #000000; color: white;">| Edd Trap |</a></li>
+                        <li class="nav-list"><a href="./resources.html">Resources</a></li>
+                    </ul><!-- .main-menu -->
+                </div>
+                <div class="hamburger">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <img src="./img/threelines.png/" alt="Logo" class="hamburger-size">
+                    </a>
+                </div>
+				
+
+            </div><!-- .header -->
+
 		<div class="container-home">
-			<nav class="nav margin-bottom">
-				<ul class="nav-container">
-					<li class="nav-item-one"><a href="./index.html">Welcome</a></li>
-					<li class="nav-item-two"><a href="./approach.html">Approach</a></li>
-					<li class="nav-item-three"><a href="./understand.html">Understand</a></li>
-					<li class="nav-item-four nav-active"><a href="./edd.html" style="background-color: #000000; color: white;">| EDD Trap |</a></li>
-					<li class="nav-item-five"><a href="./resources.html">Resources</a></li>
-				</ul>
-			</nav>
-			<div class="reach-out">
+				<div class="reach-out">
 				<a href="mailto:yavor.b.popov@gmail.com" style="reach-out-style"><button class="reach-out-style">Reach out</button></a>
+				</div>
 			</div>
-		</div>
-	<!-- End of Nav -->
+		<div class="wrapper2">	
+		
+		<div class="picture">
+		    <img src="./img/heart.png" alt="Drawing of a heart" class="internal-pages-pic">
+		  </div>
 
-
-		<div class="container-home">	
 
 	<!-- Content -->
-		<div class="content">
+		<div class="page-copy">
 			<h1>The EDD Trap</h1>
 			<p><i>EDD: Emotionally-Driven Development</i></p>
 			<p>When it is someone’s emotions instead of verified user needs that drive product decisions, you are in an EDD trap (Emotionally-Driven Development trap). It’s quite easy to fall in those as we, human beings, happen to be emotional creatures. Before we discuss ways to avoid doing emotionally-driven product development, let's see how we can tell EDD.</p>
@@ -82,32 +107,19 @@
 		</div> 
 			<!-- End of Content -->
 
-	<!-- Footer -->
-		<div class="container-footer">
-
-			<!-- Social Links -->
-			<div class="social-links">
-				 <div class="social-links-container">
-				       <figure class="social-item">
-				         <a href="https://www.linkedin.com/in/yavorpopov/"><img src="./img/icon-in.png" class="size-social-links"></a>
-				       </figure>
-
-				       <figure class="social-item">
-				         <a href="https://medium.com/yavor-popov"><img src="./img/icon-medium.png" class="size-social-links"></a>
-				       </figure>
-				 
-				       <figure class="social-item">
-				         <a href="mailto:yavor.b.popov@gmail.com"><img src="./img/icon-mail.png" class="size-social-links"></a>
-				       </figure>
-				 </div>
-			</div>
+		<!-- Footer -->
+		<div class="footer2">
+				<!-- Social Links -->    
+	        <a href="https://www.linkedin.com/in/yavorpopov/"><img src="./img/icon-in.png" class="social-link"></a>
+	        <a href="https://medium.com/yavor-popov"><img src="./img/icon-medium.png" class="social-link"></a>
+			<a href="mailto:yavor.b.popov@gmail.com"><img src="./img/icon-mail.png" class="social-link"></a>    
 			<!-- End of Social Links -->
 
-			<div class="footer">
-					<p>This website has been proudly built by myself.</p>
+			<div class="footer-note">
+					<p><i>This website has been proudly built by myself.</i></p>
 			</div>
-		</div> 
-	<!-- End of Footer -->
+		</div>
+		<!-- End of Footer -->
 
 	</body>
 </html>
